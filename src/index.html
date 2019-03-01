@@ -6,7 +6,10 @@
     <title>CSE 116 Group Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="main_form">
@@ -18,7 +21,13 @@
         </form>
     </div>
     <div class="settings">
-        <button class="settings_button">Settings</button>
+        <button type = "button" data-toggle="collapse" class="settings_button" data-target="#setting">Settings</button>
+        <div id="setting" class = "collapse">
+            Volume
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>    
+        </div>
     </div>
 </body>
 </html>
