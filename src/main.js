@@ -6,3 +6,7 @@ output.innerHTML = slider.value; // Display the default slider value
 slider.oninput = function() {
   output.innerHTML = this.value;
 }
+
+function show() {
+  document.getElementById("image").style.display = "block";
+}
